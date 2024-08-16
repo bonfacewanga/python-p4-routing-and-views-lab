@@ -45,12 +45,11 @@ def math(num1, operation, num2):
     elif operation == '%':
         result = num1 % num2
     else:
-        
         # Return 400 Bad Request for invalid operation
         return "Invalid operation", 400  
 
     return str(result)
 
 if __name__ == '__main__':
-    # Run the Flask app on port 5555
+    # Now run the Flask app on port 5555
     app.run(port=5555)  
